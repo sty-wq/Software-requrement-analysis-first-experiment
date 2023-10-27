@@ -12,7 +12,7 @@ Actor数量：2
 ![用例图](homeworkUpdate/RequirmentsDescription/picture/用例图.png)
 
 类图：
-！[类图](homeworkUpdate/RequirmentsDescription/picture/类图.png)
+![类图](homeworkUpdate/RequirmentsDescription/picture/类图.png)
 
 学生时序图：
 ![时序图Student](homeworkUpdate/RequirmentsDescription/picture/时序图Student.png)
