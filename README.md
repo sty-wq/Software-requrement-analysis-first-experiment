@@ -1,10 +1,10 @@
 # Software-requrement-analysis-first-experiment
 
-### 用户需求数量：
+### 自然语言需求数量：8
 ### Actor数量：2
 ### 用例数量：7
 ### 系统顺序图数量：2
-### 系统操作总数：
+### 系统操作总数：7
 ### 系统合约数量：
 ### 类数量：4
 ---
@@ -14,10 +14,10 @@
 **类图：**
 ![类图](homeworkUpdate/RequirmentsDescription/picture/类图.png)
 
-**学生时序图：**
+**学生顺序图：**
 ![时序图Student](homeworkUpdate/RequirmentsDescription/picture/时序图Student.png)
 
-**教师时序图:**
+**教师顺序图:**
 ![教师时序图](homeworkUpdate/RequirmentsDescription/picture/时序图Teacher.png)
 
 **结果图：**
