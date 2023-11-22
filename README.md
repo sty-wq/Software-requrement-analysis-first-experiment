@@ -22,8 +22,10 @@
 
 **结果图：**
 ![结果图](homeworkUpdate/RequirmentsDescription/picture/运行结果.png)
+---
 
 **第三次实验结果图：**
+---
 ![1](homeworkUpdate/RequirmentsDescription/picture/1.png)
 ![2](homeworkUpdate/RequirmentsDescription/picture/2.png)
 ![3](homeworkUpdate/RequirmentsDescription/picture/3.png)
