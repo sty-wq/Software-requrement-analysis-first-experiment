@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="ASCII"?>
+<rEMODEL:RequirementModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rEMODEL="http://www.mydreamy.net/requirementmodel/REMODEL">
+  <UseCaseModel name="HomeworkUpdate">
+    <uc name="studentUpdateHomework">
+      <ssd href="homeworkupdate.remodel#|0"/>
+      <service href="homeworkupdate.remodel#|1"/>
+    </uc>
+    <uc name="studentViewComment"/>
+    <uc name="teacherIssueHomework">
+      <ssd href="homeworkupdate.remodel#|2"/>
+      <service href="homeworkupdate.remodel#|3"/>
+    </uc>
+    <uc name="studentViewHomework"/>
+    <uc name="teacherDownloadHomework" UCRelation="include">
+      <relateduc href="homeworkupdate.remodel#|4"/>
+    </uc>
+    <uc name="queryHomework"/>
+    <uc name="teacherCommentHomework" UCRelation="include">
+      <relateduc href="homeworkupdate.remodel#|5"/>
+    </uc>
+    <actor name="Student">
+      <uc href="homeworkupdate.remodel#|6"/>
+      <uc href="homeworkupdate.remodel#|7"/>
+      <uc href="homeworkupdate.remodel#|8"/>
+    </actor>
+    <actor name="Teacher">
+      <uc href="homeworkupdate.remodel#|9"/>
+      <uc href="homeworkupdate.remodel#|10"/>
+      <uc href="homeworkupdate.remodel#|11"/>
+    </actor>
+    <interaction name="StudentUpdateHomeworkSSD">
+      <participants href="homeworkupdate.remodel#|12"/>
+      <participants href="homeworkupdate.remodel#|13"/>
+      <messages xsi:type="rEMODEL:CallMessage" name="StudentUpdateHomeworkSSDCallMessage1">
+        <sendingEnd href="homeworkupdate.remodel#|15"/>
+        <receivingEnd href="homeworkupdate.remodel#|16"/>
+        <op href="homeworkupdate.remodel#|14"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="StudentUpdateHomeworkSSDCallMessage1Return">
+        <sendingEnd href="homeworkupdate.remodel#|17"/>
+        <receivingEnd href="homeworkupdate.remodel#|18"/>
+        <invocationMessage href="homeworkupdate.remodel#|19"/>
+      </messages>
+      <messages xsi:type="rEMODEL:CallMessage" name="StudentUpdateHomeworkSSDCallMessage3">
+        <sendingEnd href="homeworkupdate.remodel#|21"/>
+        <receivingEnd href="homeworkupdate.remodel#|22"/>
+        <op href="homeworkupdate.remodel#|20"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="StudentUpdateHomeworkSSDCallMessage3Return">
+        <sendingEnd href="homeworkupdate.remodel#|23"/>
+        <receivingEnd href="homeworkupdate.remodel#|24"/>
+        <invocationMessage href="homeworkupdate.remodel#|25"/>
+      </messages>
+      <messages xsi:type="rEMODEL:CallMessage" name="StudentUpdateHomeworkSSDCallMessage5">
+        <sendingEnd href="homeworkupdate.remodel#|27"/>
+        <receivingEnd href="homeworkupdate.remodel#|28"/>
+        <op href="homeworkupdate.remodel#|26"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="StudentUpdateHomeworkSSDCallMessage5Return">
+        <sendingEnd href="homeworkupdate.remodel#|29"/>
+        <receivingEnd href="homeworkupdate.remodel#|30"/>
+        <invocationMessage href="homeworkupdate.remodel#|31"/>
+      </messages>
+      <executions name="StudentUpdateHomeworkSSDExecution1">
+        <owner href="homeworkupdate.remodel#|32"/>
+        <start href="homeworkupdate.remodel#|33"/>
+        <end href="homeworkupdate.remodel#|34"/>
+      </executions>
+      <executions name="StudentUpdateHomeworkSSDExecution2">
+        <owner href="homeworkupdate.remodel#|35"/>
+        <start href="homeworkupdate.remodel#|36"/>
+        <end href="homeworkupdate.remodel#|37"/>
+      </executions>
+      <executions name="StudentUpdateHomeworkSSDExecution3">
+        <owner href="homeworkupdate.remodel#|38"/>
+        <start href="homeworkupdate.remodel#|39"/>
+        <end href="homeworkupdate.remodel#|40"/>
+      </executions>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage1SendingEnd">
+        <context href="homeworkupdate.remodel#|41"/>
+        <message href="homeworkupdate.remodel#|42"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution1StartEnd">
+        <context href="homeworkupdate.remodel#|43"/>
+        <execution href="homeworkupdate.remodel#|44"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution1FinishEnd">
+        <context href="homeworkupdate.remodel#|45"/>
+        <execution href="homeworkupdate.remodel#|46"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage1ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|47"/>
+        <message href="homeworkupdate.remodel#|48"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage3SendingEnd">
+        <context href="homeworkupdate.remodel#|49"/>
+        <message href="homeworkupdate.remodel#|50"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution2StartEnd">
+        <context href="homeworkupdate.remodel#|51"/>
+        <execution href="homeworkupdate.remodel#|52"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution2FinishEnd">
+        <context href="homeworkupdate.remodel#|53"/>
+        <execution href="homeworkupdate.remodel#|54"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage3ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|55"/>
+        <message href="homeworkupdate.remodel#|56"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage5SendingEnd">
+        <context href="homeworkupdate.remodel#|57"/>
+        <message href="homeworkupdate.remodel#|58"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution3StartEnd">
+        <context href="homeworkupdate.remodel#|59"/>
+        <execution href="homeworkupdate.remodel#|60"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="StudentUpdateHomeworkSSDExecution3FinishEnd">
+        <context href="homeworkupdate.remodel#|61"/>
+        <execution href="homeworkupdate.remodel#|62"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="StudentUpdateHomeworkSSDCallMessage5ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|63"/>
+        <message href="homeworkupdate.remodel#|64"/>
+      </ends>
+    </interaction>
+    <interaction name="TeacherIssueHomeworkSSD">
+      <participants href="homeworkupdate.remodel#|65"/>
+      <participants href="homeworkupdate.remodel#|66"/>
+      <messages xsi:type="rEMODEL:CallMessage" name="TeacherIssueHomeworkSSDCallMessage1">
+        <sendingEnd href="homeworkupdate.remodel#|68"/>
+        <receivingEnd href="homeworkupdate.remodel#|69"/>
+        <op href="homeworkupdate.remodel#|67"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="TeacherIssueHomeworkSSDCallMessage1Return">
+        <sendingEnd href="homeworkupdate.remodel#|70"/>
+        <receivingEnd href="homeworkupdate.remodel#|71"/>
+        <invocationMessage href="homeworkupdate.remodel#|72"/>
+      </messages>
+      <messages xsi:type="rEMODEL:CallMessage" name="TeacherIssueHomeworkSSDCallMessage3">
+        <sendingEnd href="homeworkupdate.remodel#|74"/>
+        <receivingEnd href="homeworkupdate.remodel#|75"/>
+        <op href="homeworkupdate.remodel#|73"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="TeacherIssueHomeworkSSDCallMessage3Return">
+        <sendingEnd href="homeworkupdate.remodel#|76"/>
+        <receivingEnd href="homeworkupdate.remodel#|77"/>
+        <invocationMessage href="homeworkupdate.remodel#|78"/>
+      </messages>
+      <messages xsi:type="rEMODEL:CallMessage" name="TeacherIssueHomeworkSSDCallMessage5">
+        <sendingEnd href="homeworkupdate.remodel#|80"/>
+        <receivingEnd href="homeworkupdate.remodel#|81"/>
+        <op href="homeworkupdate.remodel#|79"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="TeacherIssueHomeworkSSDCallMessage5Return">
+        <sendingEnd href="homeworkupdate.remodel#|82"/>
+        <receivingEnd href="homeworkupdate.remodel#|83"/>
+        <invocationMessage href="homeworkupdate.remodel#|84"/>
+      </messages>
+      <messages xsi:type="rEMODEL:CallMessage" name="TeacherIssueHomeworkSSDCallMessage7">
+        <sendingEnd href="homeworkupdate.remodel#|86"/>
+        <receivingEnd href="homeworkupdate.remodel#|87"/>
+        <op href="homeworkupdate.remodel#|85"/>
+      </messages>
+      <messages xsi:type="rEMODEL:ReturnMessage" name="TeacherIssueHomeworkSSDCallMessage7Return">
+        <sendingEnd href="homeworkupdate.remodel#|88"/>
+        <receivingEnd href="homeworkupdate.remodel#|89"/>
+        <invocationMessage href="homeworkupdate.remodel#|90"/>
+      </messages>
+      <executions name="TeacherIssueHomeworkSSDExecution1">
+        <owner href="homeworkupdate.remodel#|91"/>
+        <start href="homeworkupdate.remodel#|92"/>
+        <end href="homeworkupdate.remodel#|93"/>
+      </executions>
+      <executions name="TeacherIssueHomeworkSSDExecution2">
+        <owner href="homeworkupdate.remodel#|94"/>
+        <start href="homeworkupdate.remodel#|95"/>
+        <end href="homeworkupdate.remodel#|96"/>
+      </executions>
+      <executions name="TeacherIssueHomeworkSSDExecution3">
+        <owner href="homeworkupdate.remodel#|97"/>
+        <start href="homeworkupdate.remodel#|98"/>
+        <end href="homeworkupdate.remodel#|99"/>
+      </executions>
+      <executions name="TeacherIssueHomeworkSSDExecution4">
+        <owner href="homeworkupdate.remodel#|100"/>
+        <start href="homeworkupdate.remodel#|101"/>
+        <end href="homeworkupdate.remodel#|102"/>
+      </executions>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage1SendingEnd">
+        <context href="homeworkupdate.remodel#|103"/>
+        <message href="homeworkupdate.remodel#|104"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution1StartEnd">
+        <context href="homeworkupdate.remodel#|105"/>
+        <execution href="homeworkupdate.remodel#|106"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution1FinishEnd">
+        <context href="homeworkupdate.remodel#|107"/>
+        <execution href="homeworkupdate.remodel#|108"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage1ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|109"/>
+        <message href="homeworkupdate.remodel#|110"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage3SendingEnd">
+        <context href="homeworkupdate.remodel#|111"/>
+        <message href="homeworkupdate.remodel#|112"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution2StartEnd">
+        <context href="homeworkupdate.remodel#|113"/>
+        <execution href="homeworkupdate.remodel#|114"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution2FinishEnd">
+        <context href="homeworkupdate.remodel#|115"/>
+        <execution href="homeworkupdate.remodel#|116"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage3ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|117"/>
+        <message href="homeworkupdate.remodel#|118"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage5SendingEnd">
+        <context href="homeworkupdate.remodel#|119"/>
+        <message href="homeworkupdate.remodel#|120"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution3StartEnd">
+        <context href="homeworkupdate.remodel#|121"/>
+        <execution href="homeworkupdate.remodel#|122"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution3FinishEnd">
+        <context href="homeworkupdate.remodel#|123"/>
+        <execution href="homeworkupdate.remodel#|124"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage5ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|125"/>
+        <message href="homeworkupdate.remodel#|126"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage7SendingEnd">
+        <context href="homeworkupdate.remodel#|127"/>
+        <message href="homeworkupdate.remodel#|128"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution4StartEnd">
+        <context href="homeworkupdate.remodel#|129"/>
+        <execution href="homeworkupdate.remodel#|130"/>
+      </ends>
+      <ends xsi:type="rEMODEL:ExecutionEnd" name="TeacherIssueHomeworkSSDExecution4FinishEnd">
+        <context href="homeworkupdate.remodel#|131"/>
+        <execution href="homeworkupdate.remodel#|132"/>
+      </ends>
+      <ends xsi:type="rEMODEL:MessageEnd" name="TeacherIssueHomeworkSSDCallMessage7ReturnReceivingEnd">
+        <context href="homeworkupdate.remodel#|133"/>
+        <message href="homeworkupdate.remodel#|134"/>
+      </ends>
+    </interaction>
+    <service name="HomeworkUpdateSystem"/>
+    <service name="ThirdPartyServices"/>
+    <service name="StudentUpdateHomeworkService">
+      <operation name="viewHomework">
+        <parameter name="iD"/>
+      </operation>
+      <operation name="updateHomework"/>
+      <operation name="viewComment"/>
+    </service>
+    <service name="TeacherIssueHomeworkService">
+      <operation name="issueHomework"/>
+      <operation name="queryHomework"/>
+      <operation name="downloadHomework"/>
+      <operation name="commentHomework"/>
+    </service>
+    <contract>
+      <service href="homeworkupdate.remodel#|135"/>
+      <op name="viewHomework">
+        <parameter name="iD">
+          <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+        </parameter>
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|136"/>
+      <op name="updateHomework">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|137"/>
+      <op name="viewComment">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|138"/>
+      <op name="issueHomework">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|139"/>
+      <op name="queryHomework">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|140"/>
+      <op name="downloadHomework">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+    <contract>
+      <service href="homeworkupdate.remodel#|141"/>
+      <op name="commentHomework">
+        <returnType xsi:type="rEMODEL:PrimitiveTypeCS" name="Boolean"/>
+      </op>
+      <pre>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </pre>
+      <post>
+        <oclexp xsi:type="rEMODEL:BooleanLiteralExpCS" symbol="true"/>
+      </post>
+    </contract>
+  </UseCaseModel>
+  <DomainModel name="HomeworkUpdate">
+    <entity name="User">
+      <attributes name="Name">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="Authority">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="Password">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+    </entity>
+    <entity name="Student">
+      <superEntity href="homeworkupdate.remodel#|142"/>
+      <attributes name="StuID">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="StuClass">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="Profession">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <reference name="StudenttoHomework" ismultiple="true" isReverseAssoication="true" type="Association">
+        <entity href="homeworkupdate.remodel#|143"/>
+      </reference>
+    </entity>
+    <entity name="Teacher">
+      <superEntity href="homeworkupdate.remodel#|144"/>
+      <attributes name="College">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <reference name="TeachertoHomework" ismultiple="true" isReverseAssoication="true" type="Association">
+        <entity href="homeworkupdate.remodel#|145"/>
+      </reference>
+    </entity>
+    <entity name="Homework">
+      <attributes name="ID">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="Description">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="StuClass">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="StuProfession">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <attributes name="TeacherID">
+        <type xsi:type="rEMODEL:PrimitiveTypeCS" name="String"/>
+      </attributes>
+      <reference name="HomeworktoStudent" ismultiple="true" type="Association">
+        <entity href="homeworkupdate.remodel#|146"/>
+      </reference>
+      <reference name="HomeworktoTeacher" type="Association">
+        <entity href="homeworkupdate.remodel#|147"/>
+      </reference>
+    </entity>
+  </DomainModel>
+</rEMODEL:RequirementModel>

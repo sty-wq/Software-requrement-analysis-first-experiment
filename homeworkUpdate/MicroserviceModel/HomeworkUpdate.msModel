@@ -1,0 +1,80 @@
+MicroServiceModel HomeworkUpdate {
+	MicroService TeacherService {
+		ProvidedInterface teacherIssueHomework{
+			[Operation]
+			teacherIssueHomework
+		}
+		ProvidedInterface teacherDownloadHomework{
+			[Operation]
+			teacherDownloadHomework
+		}
+		ProvidedInterface teacherCommentHomework{
+			[Operation]
+			teacherCommentHomework
+		}
+		ProvidedInterface manageHomework{
+			[Operation]
+			createHomework
+			queryHomework
+			updateHomework
+			modifyHomework
+		}
+		RequiredInterface manageStudent
+		DomainModel TeacherService {
+			 Entity Teacher {
+				College : String
+				[Refer]
+				TeachertoHomework : Homework  Association
+			}
+			 Entity Homework {
+				ID : String
+				Description : String
+				StuClass : String
+				StuProfession : String
+				TeacherID : String
+				[Refer]
+				HomeworktoTeacher : Teacher  Association
+			}
+		}
+	}
+	MicroService StudentService {
+		ProvidedInterface studentViewHomework{
+			[Operation]
+			studentViewHomework
+		}
+		ProvidedInterface studentViewComment{
+			[Operation]
+			studentViewComment
+		}
+		ProvidedInterface queryHomework{
+			[Operation]
+			queryHomework
+		}
+		ProvidedInterface studentUpdateHomework{
+			[Operation]
+			studentUpdateHomework
+		}
+		ProvidedInterface manageStudent{
+			[Operation]
+			createStudent
+			queryStudent
+			updateStudent
+			modifyStudent
+		}
+		RequiredInterface manageHomework
+		DomainModel StudentService {
+			 Entity User {
+				Name : String
+				Authority : String
+				Password : String
+				[Refer]
+			}
+			 Entity Student {
+				StuID : String
+				StuClass : String
+				Profession : String
+				[Refer]
+			}
+		}
+	}
+}
